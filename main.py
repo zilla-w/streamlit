@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from PIL import Image
+#from PIL import Image
 import time
 
 st.title('Streamlit 超入門')
@@ -54,16 +54,16 @@ mp = pd.DataFrame(
 )
 st.map(mp)
 
-st.write('Display Image')
+#st.write('Display Image')
 
-img = Image.open('godzilla1.jpg')
-st.image(img, caption='Godzilla', use_column_width=True)
+#img = Image.open('godzilla1.jpg')
+#st.image(img, caption='Godzilla', use_column_width=True)
 
-# チェックボックスによる表示可否
-# チェックを入れる = True、　チェックを外す = False
-if st.checkbox('Show Image'):
-    img = Image.open('godzilla2.jpg')
-    st.image(img, caption='Godzilla vs Gong', use_column_width=True)
+## チェックボックスによる表示可否
+## チェックを入れる = True、　チェックを外す = False
+#if st.checkbox('Show Image'):
+#    img = Image.open('godzilla2.jpg')
+#    st.image(img, caption='Godzilla vs Gong', use_column_width=True)
 
 # セレクトボックスによる動的変更
 select_math = st.selectbox(
